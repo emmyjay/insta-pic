@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+
+
+    <header>
+      <% include ../partials/header %>
+    </header>
+
+    <main>
+        <% grams.forEach(function(gram){ %>
+
+          <div class="grid col-md-3 col-sm-3 col-xs-6">
+             <div class="item item--medium">
+               <img src="<%= gram.urls.small %>" class="img-responsive">
+
+               <div class="item__details">
+               <div class="likes">
+               <span style="color:red">&hearts;</span>
+               <%= gram.likes %>
+             </div>
+
+
+             <div class="download">
+             <a href="<%= gram.links.download_location %> download">
+               <i class="material-icons">file_download</i>
+              </a>
+              </div>
+             </div>
+           </div>
+
+         </div>
+         <% }); %>
+       </main>
+
+
+
+
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+
+  </body>
+</html>

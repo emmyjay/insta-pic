@@ -1,0 +1,27 @@
+{
+  "name": "insta-pic",
+  "version": "1.0.0",
+  "description": "An unsplash api wrapper built with node",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "gcloud app deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmyjay/insta-pic.git"
+  },
+  "author": "Ogunjirin Emmanuel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/emmyjay/insta-pic/issues"
+  },
+  "homepage": "https://github.com/emmyjay/insta-pic#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "instagram-node": "^0.5.8",
+    "node-sass": "^4.5.3",
+    "unsplash-api": "^1.2.0"
+  }
+}
